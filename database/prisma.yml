@@ -1,0 +1,7 @@
+endpoint: https://eu1.prisma.sh/ilker-bc2254/database/dev
+datamodel: datamodel.graphql
+secret: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNlcnZpY2UiOiJkYXRhYmFzZUBkZXYiLCJyb2xlcyI6WyJhZG1pbiJdfSwiaWF0IjoxNTQzNDMxNjU1LCJleHAiOjE1NDQwMzY0NTV9.iFxxlk9ijatj6ElqXbo4p5pTvKC-Uj6avTq2JgQDoNQ
+
+hooks: 
+  post-deploy: 
+    - graphql get-schema --project database
